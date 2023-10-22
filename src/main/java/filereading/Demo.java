@@ -3,7 +3,6 @@ package filereading;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 
 public class Demo {
 
@@ -27,13 +26,6 @@ public class Demo {
         }
         catch(Exception e) {
             e.printStackTrace();
-        }finally {
-            try {
-                br.close();
-                fileReader.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
 
         System.out.println(lineCount);
